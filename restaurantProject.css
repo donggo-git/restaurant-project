@@ -169,11 +169,28 @@ i{
     
 }
 .full-menus{
+    position: relative;
     display: flex;
     margin: 0 auto;
     width: auto;
     justify-content: space-evenly;
     font-family: 'Roboto', sans-serif;
+    
+    
+}
+.full-menus::before{
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 100%;
+    width: 40vw;
+    background-image: url('undraw_eating_together_tjhx.svg');
+    background-size: cover;
+    
+    z-index: -1;
+    opacity: 0.5;
 }
 .menu-items{
     margin: 0.4rem 0;
@@ -184,10 +201,31 @@ i{
 .item-name{
     font-weight: 600;
     margin-left: 1rem;
+    cursor: pointer;
 }
 .section{
     margin: 0.6rem 0;
     margin-left: calc(20px + 1rem);
     font-size: 1.4rem;
     font-weight: 600;
+}
+
+.item-deital{
+    display: none;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 1s;
+    
+}
+.item-deital-active{
+    display: block;
+    animation-name: deital-active!important;
+    animation-duration: 0.5s;
+    animation-fill-mode:forwards;
+}
+@keyframes deital-active{
+    100%{
+    opacity: 1;
+    transform: scale(1);
+    }
 }
