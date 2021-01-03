@@ -30,12 +30,16 @@ $(document).ready(function () {
 
     });
     $('.item-name').click(function () {
-        detail_isActive = !detail_isActive;
-        if (detail_isActive) {
+
+        if ($(this).parent().hasClass('is-not-active')) {
+            $(this).parent().animate({ 'min-height': "5.8rem" })
             $(this).parent().children('.item-deital').addClass('item-deital-active')
+            $(this).parent().removeClass('is-not-active')
         }
         else {
+            $(this).parent().animate({ 'min-height': "1.2rem" })
             $(this).parent().children('.item-deital').removeClass('item-deital-active')
+            $(this).parent().addClass('is-not-active')
         }
     })
 

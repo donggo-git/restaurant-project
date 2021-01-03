@@ -40,6 +40,11 @@ nav a{
 }
 #about-us-link{
     border: solid 1px#ffffff;
+    transition: all 0.4s;
+}
+#about-us-link:hover{
+    background-color: #ffffff;
+    color: rgba(0,0,0,0.2);
 }
 .logo-container{
     font-size: 3rem;
@@ -180,23 +185,26 @@ i{
 }
 .full-menus::before{
     content: " ";
+    padding-bottom: 20%;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    height: 100%;
-    width: 40vw;
+    transform: translate(-50%,-40%);
+    height: 50%;
+    width: 50%;
     background-image: url('undraw_eating_together_tjhx.svg');
-    background-size: cover;
-    
+    background-size: 90%;
+    background-repeat: no-repeat;
     z-index: -1;
     opacity: 0.5;
+    transition: all 0.2s;
 }
 .menu-items{
     margin: 0.4rem 0;
     display: grid;
     grid-template-columns: 20vw 20px;
-    
+    overflow: hidden;
+    height: 1.2rem;
 }
 .item-name{
     font-weight: 600;
@@ -211,14 +219,14 @@ i{
 }
 
 .item-deital{
-    display: none;
+    display: block;
     opacity: 0;
     transform: scale(0.5);
     transition: all 1s;
     
 }
 .item-deital-active{
-    display: block;
+    
     animation-name: deital-active!important;
     animation-duration: 0.5s;
     animation-fill-mode:forwards;
