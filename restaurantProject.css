@@ -19,7 +19,7 @@ header{
 nav{
     position: fixed;
     width: 100vw;
-    height: 10%;
+    min-height: 10%;
     box-shadow: 0 0 100px rgba(0,0,0,0.3), 0 0 115px rgba(0,0,0,0.3);
     display: flex;
     align-items: center;
@@ -63,13 +63,15 @@ nav a{
 }
 #about-us{
     display: flex;
-    height: 100vh;
+    height: 50vh;
     width: 100%;
     justify-content: center;
     align-items: center;
+    margin: 10vh 0;
+    padding: 10vh 0;
 }
 .hour-location{
-    min-height: 45%;
+    height: 100%;
     width: 30%;
     background-color: #EBB347;
     display: flex;
@@ -102,7 +104,7 @@ nav a{
     color:  #EBB347;
 }
 #menus{
-    min-height: 100vh;
+    min-height: auto;
     width: 100%;
 }
 #menus h3{
@@ -176,7 +178,7 @@ i{
 .full-menus{
     position: relative;
     display: flex;
-    margin: 0 auto;
+    margin: 5vh auto;
     width: auto;
     justify-content: space-evenly;
     font-family: 'Roboto', sans-serif;
@@ -205,6 +207,8 @@ i{
     grid-template-columns: 20vw 20px;
     overflow: hidden;
     height: 1.2rem;
+    width: auto;
+    padding: 0 10px;
 }
 .item-name{
     font-weight: 600;
@@ -236,4 +240,7 @@ i{
     opacity: 1;
     transform: scale(1);
     }
+}
+#review{
+    margin: 15vh 0 0 0;
 }
