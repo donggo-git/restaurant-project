@@ -107,7 +107,7 @@ nav a{
     min-height: auto;
     width: 100%;
 }
-#menus h3{
+section h3{
     text-align: center;
     font-family: 'Rosarivo', serif;
 }
@@ -265,23 +265,27 @@ form{
     transition: all 0.2s;
     height: 0;
     z-index: -1;
-}@keyframes change-height{
-    100%{
-        height: auto;
-        z-index: 1;
-        opacity: 1;
-    }
 }
 h2{
     text-align: center;
     margin-bottom: 1rem;
     font-family: 'Poppins', sans-serif;
 }
-.txt-field{
+.txt-field, .time{
     position: relative;
     margin: 1.4rem 0;
     border-bottom: 1px solid rgb(139, 135, 135);
     margin-bottom: 20px;
+}
+.time{
+    border: none;
+}
+.time input{
+    color:  rgb(139, 135, 135);
+    font-size: 1rem;
+    background-color:rgb(240, 240, 240);
+    border: 1px solid  rgb(139, 135, 135);
+    padding: 0.2rem;
 }
 .txt-field span{
     content: "";
@@ -303,13 +307,14 @@ h2{
     outline: none;
     padding:  0 6px;
     color:rgb(77, 77, 77);
+    outline: none;
 }
 .txt-field input:focus ~ label{
     transform: translate(0, -180%);
     font-size: 12px;
     color: rgb(4, 151, 209);
 }
-.txt-field input:invalid ~ label{
+.txt-field input:valid ~ label{
     transform: translate(0, -180%);
     font-size: 12px;
     color: rgb(4, 151, 209);
@@ -329,31 +334,7 @@ h2{
 .password{
     margin-bottom: 10px
 }
- .remember-me{
-     margin-bottom: 30px;
- }
- .fake-check{
-     display: inline-block;
-     background-color: red;
-     height: 13px;
-     width: 13px;
-     border-radius: 20%;
-     position: relative
- }
- .fake-check :after{
-     height: 30px;
-     width: 30px;
-     border: 1px solid white;
-     position: absolute;
-     background: none;
- }
- .remember{
-     color:rgb(77, 77, 77);
- }
- input[type="checkbox"]{
-     color: pink;
-     background-color: pink;
- }
+ 
 input[type="submit"]{
     width: 100%;
     text-align: center;
@@ -361,81 +342,8 @@ input[type="submit"]{
     font-size: 15px;
     font-weight: 600;
     color: white;
-    background-color:rgb(206, 76, 178);
+    background-color:rgb(78, 207, 3);
     border: none;
     border-radius: 2px;
     cursor: pointer;
 }
-.line-text{
-    margin-top: 20px;
-    text-align: center;
-    color: rgb(77, 77, 77);
-}
-.other-login-container{
-    margin-top: 20px;
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-}
-.other-login{
-    height: 30px;
-    width: 45%;
-    padding: 0px;
-    border: 1px solid rgb(230, 230, 230);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgb(77, 77, 77);
-    font-weight: 600;
-    cursor: pointer;
-}
-.other-login p{
-    margin-left: 8px;
-    font-family: 'Roboto Condensed', sans-serif;;
-}
-.facebook{
-    color: rgb(59, 105, 189);;
-}
-#google{
-    position: relative;
-  border-top: 3.8px solid #EA4335;
-  border-right: 3.8px solid #4285F4;
-  border-bottom: 3.8px solid #34A853;
-  border-left: 3.8px solid #FBBC05;
-  border-radius: 50%;
-  background-color: #FFFFFF;
-  width: 9px;
-  height: 9px;
-  padding: 0;
-}
-#google::before {
-    content: "";
-    z-index: 100;
-    position: absolute;
-    top: 50%;
-    right: -2px;
-    transform: translateY(-50%);
-    width: 5px;
-    height: 4px;
-    background: #4285F4;
-  }
-  
-  #google::after {
-    content: "";
-    z-index: 101;
-    position: absolute;
-    border-top: 6px solid transparent;
-    border-right: 10px solid #FFFFFF;
-    top: -3px;
-    right: -3.5px;
-    width: 0;
-    height: 0;
-  }
-  .sign-up{
-      font-size: 14px;
-      display: flex;
-      margin-top: 1.4rem;
-      text-align: center;
-      color: rgb(156, 156, 156);
-      justify-content: center;
-  }

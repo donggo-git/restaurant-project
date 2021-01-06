@@ -273,39 +273,30 @@
         </section>
         <section id='contact'>
             <h3>HOW TO ORDER</h3>
-            <p>for pick up and reservation you can call or fill the form below </p>
+
             <form class="login-form">
                 <div class="txt-field">
-                    <input type="text" name="username" class="username">
+                    <input type="text" name="username" class="username" autocomplete="off" required>
                     <span></span>
                     <label for="username">Your name</label>
                 </div>
+
                 <div class="txt-field password">
-                    <input type="password" name="password">
+                    <input type="tel" id="phone" name="phone" pattern="[+]{1}[0-9]{11,14}" required>
                     <span></span>
-                    <label for="password">Your phone number</label>
+                    <label for="phone">Your phone number</label>
                 </div>
-                <div class='remember-me'>
-                    <input name="remember-me" type="checkbox">
-
-                    <label for="remeber-me" class="remember">Remember me</label>
+                <div class="txt-field">
+                    <input type="number" name="quantity" class="username" autocomplete="off" required>
+                    <span></span>
+                    <label for="username">How many people</label>
                 </div>
-                <input type="submit" value="LOGIN">
-                <div class="line-text"><span>or you can login with</span></div>
-                <div class="other-login-container">
-                    <div class="facebook other-login"><i class="fab fa-facebook-square"></i>
-                        <p>Facebook</p>
-                    </div>
-                    <div class="google-account other-login">
-                        <div id="google"></div>
-                        <p>Google</p>
-                    </div>
+                <div class="time">
+                    <p>When</p>
+                    <input type="date" name="date" class="username" autocomplete="off" required>
+                    <input type="time" name="time" class="username" autocomplete="off" required>
                 </div>
-                <div class="sign-up">
-                    <p>Already created account</p>
-                    <p class="change-page">sign up now</p>
-                </div>
-
+                <input type="submit" value="SUBMIT">
             </form>
             <a href="https://www.doordash.com/store/meekong-bar-seattle-911639/en-US"></a>
         </section>
