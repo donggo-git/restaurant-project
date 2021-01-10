@@ -241,36 +241,38 @@ i{
     transform: scale(1);
     }
 }
-#review{
+#contact{
     margin: 15vh 0 0 0;
-}
-form{
-    
-    background-color: rgb(240, 240, 240);
-    height: 40vh;
-    width: 22vw;
-    margin: 0 auto;
-    padding: 2.9rem 3rem;
-    padding-bottom: 25px;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    overflow: hidden;
-}
-.login-form{
-    opacity: 1;
-}
-.register-form{
-    opacity: 0;
-    transition: all 0.2s;
-    height: 0;
-    z-index: -1;
 }
 h2{
     text-align: center;
     margin-bottom: 1rem;
     font-family: 'Poppins', sans-serif;
 }
+.contact{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+form{
+    
+    background-color: rgb(240, 240, 240);
+    height: 40vh;
+    width: 22vw;
+    
+    padding: 2rem 3rem;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    overflow: hidden;
+}
+.delivery{
+    width: 22vw;
+}
+
+
 .txt-field, .time{
     position: relative;
     margin: 1.4rem 0;
@@ -346,4 +348,19 @@ input[type="submit"]{
     border: none;
     border-radius: 2px;
     cursor: pointer;
+}
+#contact a{
+    display: block;
+    height: 50px;
+    width: 150px;
+    margin: 0 auto;
+   
+}
+#contact a>img{
+    display: block;
+    
+}
+.delivery p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
 }

@@ -2,6 +2,8 @@
 <html>
 
 <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="restaurantProject.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&display=swap" rel="stylesheet">
@@ -272,34 +274,44 @@
             </div>
         </section>
         <section id='contact'>
-            <h3>HOW TO ORDER</h3>
+            <h3>CONTACT</h3>
+            <div class="contact">
+                <form class="login-form">
+                    <h3>RESERVATION</h3>
+                    <div class="txt-field">
+                        <input type="text" name="username" class="username" autocomplete="off" required>
+                        <span></span>
+                        <label for="username">Your name</label>
+                    </div>
 
-            <form class="login-form">
-                <div class="txt-field">
-                    <input type="text" name="username" class="username" autocomplete="off" required>
-                    <span></span>
-                    <label for="username">Your name</label>
-                </div>
-
-                <div class="txt-field password">
-                    <input type="tel" id="phone" name="phone" pattern="[+]{1}[0-9]{11,14}" required>
-                    <span></span>
-                    <label for="phone">Your phone number</label>
-                </div>
-                <div class="txt-field">
-                    <input type="number" name="quantity" class="username" autocomplete="off" required>
-                    <span></span>
-                    <label for="username">How many people</label>
-                </div>
-                <div class="time">
-                    <p>When</p>
-                    <input type="date" name="date" class="username" autocomplete="off" required>
-                    <input type="time" name="time" class="username" autocomplete="off" required>
-                </div>
-                <input type="submit" value="SUBMIT">
-            </form>
-            <a href="https://www.doordash.com/store/meekong-bar-seattle-911639/en-US"></a>
+                    <div class="txt-field password">
+                        <input type="tel" id="phone" name="phone" pattern="[+]{1}[0-9]{11,14}" required>
+                        <span></span>
+                        <label for="phone">Your phone number</label>
+                    </div>
+                    <div class="txt-field">
+                        <input type="number" name="quantity" class="username" autocomplete="off" required>
+                        <span></span>
+                        <label for="username">How many people</label>
+                    </div>
+                    <div class="time">
+                        <p>When</p>
+                        <input type="date" name="date" class="username" autocomplete="off" required>
+                        <input type="time" name="time" class="username" autocomplete="off" required>
+                    </div>
+                    <input type="submit" value="SUBMIT">
+                </form>
+                <div class="delivery">
+                    <p>We collaborate with these guys to deliver your order fast and good as it just came out</p>
+                    <a href="https://www.doordash.com/store/meekong-bar-seattle-911639/en-US" target="blank">
+                        <img src="https://i1.wp.com/www.anyslice.com/wp-content/uploads/2019/05/doordash-logo.png?ssl=1"
+                            height="100%" width="100%"></a>
+                    <a href="">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e5/The_logo_for_Postmates.svg/250px-The_logo_for_Postmates.svg.png"
+                            height="100%" width="100%"></a>
         </section>
+        </div>
+        </div>
     </main>
 </body>
 <script src="restaurantProject.js"></script>
