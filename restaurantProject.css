@@ -16,6 +16,7 @@ header{
     background-attachment: fixed;
     position: relative;
 }
+
 nav{
     position: fixed;
     width: 100vw;
@@ -252,8 +253,36 @@ h2{
 .contact{
     display: flex;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: center;
     margin: 20px 0;
+}
+.collumn{
+    height: 30vh;
+    width: 15vw;
+    background-color: #fff;
+    color: #1784ba;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    font-size: 1.6rem;
+    font-family: 'Bodoni Moda', serif;
+    transition: all 0.5s;
+}
+.collumn:hover{
+    box-shadow: 0 0 15px rgba(0,0,0,0.2), 0 0 5px rgba(0,0,0,0.5);
+}
+.symbol-container{
+    height: 50%;
+    width: 50%;
+    margin-bottom: 1rem;
+}
+.symbol-container>img{
+    display: inline-block;
+    border-radius: 50%;
 }
 form{
     
@@ -267,9 +296,7 @@ form{
     flex-direction: column;
     height: auto;
     overflow: hidden;
-}
-.delivery{
-    width: 22vw;
+    margin-right: 2rem;
 }
 
 
@@ -355,12 +382,4 @@ input[type="submit"]{
     width: 150px;
     margin: 0 auto;
    
-}
-#contact a>img{
-    display: block;
-    
-}
-.delivery p{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem;
 }
