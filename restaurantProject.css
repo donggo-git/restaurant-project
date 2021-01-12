@@ -260,7 +260,6 @@ h2{
     height: 30vh;
     width: 15vw;
     background-color: #fff;
-    color: #1784ba;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -271,9 +270,19 @@ h2{
     font-size: 1.6rem;
     font-family: 'Bodoni Moda', serif;
     transition: all 0.5s;
+    cursor: pointer;
 }
 .collumn:hover{
     box-shadow: 0 0 15px rgba(0,0,0,0.2), 0 0 5px rgba(0,0,0,0.5);
+}
+.reservation{
+    color: rgb(151, 68, 0);
+}
+.delivery{
+    color: rgb(32, 32, 32);
+}
+.call-us{
+    color: rgb(255, 136, 0);
 }
 .symbol-container{
     height: 50%;

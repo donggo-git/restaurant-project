@@ -1,6 +1,8 @@
 {
     "cSpell.ignoreWords": [
-        "banh"
+        "banh",
+        "fantuan",
+        "postmate"
     ],
     "python.formatting.provider": "black"
 }
