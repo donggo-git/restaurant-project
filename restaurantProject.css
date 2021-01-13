@@ -293,19 +293,29 @@ h2{
     display: inline-block;
     border-radius: 50%;
 }
+.contact-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    grid-gap: 1rem;
+}
 form{
-    
-    background-color: rgb(240, 240, 240);
+    grid-column-start: 1;
+    grid-column-end:1 ;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: #fff;
     height: 40vh;
     width: 22vw;
-    
+    color:rgb(71, 71, 71);
     padding: 2rem 3rem;
     padding-bottom: 25px;
     display: flex;
     flex-direction: column;
     height: auto;
     overflow: hidden;
-    margin-right: 2rem;
+    
 }
 
 
@@ -317,13 +327,15 @@ form{
 }
 .time{
     border: none;
+    
 }
 .time input{
-    color:  rgb(139, 135, 135);
+    color:rgb(71, 71, 71);
     font-size: 1rem;
-    background-color:rgb(240, 240, 240);
+    
     border: 1px solid  rgb(139, 135, 135);
     padding: 0.2rem;
+    background-color:  #fff;
 }
 .txt-field span{
     content: "";
@@ -344,8 +356,8 @@ form{
     background: none;
     outline: none;
     padding:  0 6px;
-    color:rgb(77, 77, 77);
     outline: none;
+    color: #fff;
 }
 .txt-field input:focus ~ label{
     transform: translate(0, -180%);
@@ -391,4 +403,43 @@ input[type="submit"]{
     width: 150px;
     margin: 0 auto;
    
+}
+.delivery-content{
+    background-color:rgb(78, 207, 3);
+    width: 22vw;
+    
+    padding: 1rem 3rem;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    overflow: hidden;
+    margin-right: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.delivery-content img{
+    display: block;
+    height: 50%;
+    width: 50%;
+    margin: 1.5rem auto;
+}
+.phone-number-content{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color:#EBB347;
+    width: 22vw;
+    
+    padding: 1rem 3rem;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    overflow: hidden;
+    margin-right: 2rem;
+    justify-content: center;
+    align-items: center;
 }
