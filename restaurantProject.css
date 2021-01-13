@@ -405,7 +405,7 @@ input[type="submit"]{
    
 }
 .delivery-content{
-    background-color:rgb(78, 207, 3);
+    background-color:rgb(86, 207, 15);
     width: 22vw;
     
     padding: 1rem 3rem;
@@ -430,9 +430,9 @@ input[type="submit"]{
     grid-row-end: 3;
     grid-column-start: 2;
     grid-column-end: 3;
-    background-color:#EBB347;
+    background-color:#e7ac37;
     width: 22vw;
-    
+    font-size: 1.2rem;
     padding: 1rem 3rem;
     padding-bottom: 25px;
     display: flex;
@@ -442,4 +442,28 @@ input[type="submit"]{
     margin-right: 2rem;
     justify-content: center;
     align-items: center;
+}
+.phone-number-text{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+}
+.phone-number-text>div{
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+    background-color: #e7ac37;
+    width: 10rem;
+    padding: 0;
+}
+.phone-number-text::before{
+    z-index: 1;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color:red;
 }
