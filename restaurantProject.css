@@ -63,24 +63,35 @@ nav a{
     color: #A4DA5F;
 }
 #about-us{
-    display: flex;
-    height: 50vh;
+    height: auto;
     width: 100%;
+    padding: 3rem 0;
+}
+.about-us{
+    height: 50vh;
+    width: 50%;
+    background-image: url('25505732_EpqyVn0kCFhIEayhCc0y-P4P0jr6cRkHDZEGmKT9wPA.jpg');
+    background-size: cover;
     justify-content: center;
     align-items: center;
-    margin: 10vh 0;
+    margin: 10vh auto;
     padding: 10vh 0;
+    position: relative;
+
 }
 .hour-location{
-    height: 100%;
-    width: 30%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    height: auto;
+    width: 70%;
     background-color: #EBB347;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 1.3rem;
-    
+    padding: 10px 0;
 }
 .hour-location p{
     margin: 0.4rem 0;
@@ -300,7 +311,10 @@ h2{
     justify-content: center;
     grid-gap: 1rem;
     height: auto;
-    width: auto;
+    width: 70vw;
+    overflow: hidden;
+    
+    margin: 0 auto;
 }
 form{
     grid-column-start: 1;
@@ -407,7 +421,7 @@ input[type="submit"]{
    
 }
 .delivery-content{
-    background-color:rgb(86, 207, 15);
+    background-color:rgb(151, 68, 0);
     width: 22vw;
     
     padding: 1rem 3rem;
@@ -460,4 +474,22 @@ input[type="submit"]{
     
     width: 10rem;
     padding: 0;
+}
+.form-active{
+    animation-name: form-active;
+    animation-duration: 0.8s;
+    animation-fill-mode:forwards;
+}
+@keyframes form-active{
+    
+    100%{
+        margin-left: 32vw;
+        
+    }
+}
+.grid-not-active{
+    animation-name: grid-not-active;
+    animation-duration: 0.8s;
+    animation-fill-mode:forwards;
+    animation-delay: 0.8s;
 }

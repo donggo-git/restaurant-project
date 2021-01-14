@@ -42,5 +42,8 @@ $(document).ready(function () {
             $(this).parent().addClass('is-not-active')
         }
     })
-
+    $('.reservation').click(function () {
+        $('.reservation-content').addClass('form-active')
+        $('.')
+    })
 })
