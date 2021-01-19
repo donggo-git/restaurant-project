@@ -240,21 +240,22 @@ i{
 .menu-items{
     margin: 0.4rem 0;
     display: grid;
-    grid-template-columns: 20vw 20px;
-    overflow: hidden;
-    height: 1.2rem;
+    grid-template-columns: 20rem 30px;
+    overflow-y: hidden;
+    height: 1.6rem;
     width: auto;
-    padding: 0 10px;
+    
 }
 .item-name{
-    font-weight: 600;
+    font-size: 1.2rem;
+    font-weight: 200;
     margin-left: 1rem;
     cursor: pointer;
 }
 .section{
     margin: 0.6rem 0;
     margin-left: calc(20px + 1rem);
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 600;
     color: #07a8c3;
 }
@@ -264,7 +265,7 @@ i{
     opacity: 0;
     transform: scale(0.5);
     transition: all 1s;
-    
+    font-size: 1rem;
 }
 .item-deital-active{
     
