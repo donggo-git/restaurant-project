@@ -3,9 +3,6 @@
     margin: 0;
     scroll-behavior: smooth;
 }
-body{
-    background-color: #EFE1C6;
-}
 
 header{
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.5)),url('cropped-burger-header-white-60.jpg');
@@ -16,11 +13,13 @@ header{
     background-attachment: fixed;
     position: relative;
 }
-
+ul{
+    list-style:none;
+}
 nav{
     position: fixed;
     width: 100vw;
-    min-height: 10%;
+    height: 3.5rem;
     box-shadow: 0 0 100px rgba(0,0,0,0.3), 0 0 115px rgba(0,0,0,0.3);
     display: flex;
     align-items: center;
@@ -29,7 +28,6 @@ nav{
     z-index: 10;
 }
 nav ul{
-    list-style: none;
     display: flex;  
 }
 nav a{
@@ -92,7 +90,7 @@ nav a{
     
     height: 100vh;
     width: 40%;
-    background-color: #EBB347;
+    background-color: rgb(78, 207, 3);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -120,7 +118,7 @@ nav a{
 }
 .hour-location button:hover{
     background-color: #ffffff;
-    color:  #EBB347;
+    color:  rgb(78, 207, 3);
 }
 #menus{
     min-height: auto;
@@ -181,7 +179,7 @@ section h3{
     transform: scale(1.4);
 }
 i{
-    color: #ffffff;
+    color: rgb(78, 207, 3)  ;
     font-family: 'FontAwesome';
     font-weight: normal;
   font-style: normal;
@@ -194,10 +192,13 @@ i{
     order: 2;
     
 }
+.menus-container{
+    padding: 1rem 0;
+}
 .full-menus{
     position: relative;
     display: flex;
-    margin: 5vh auto;
+    margin: 0 auto;
     width: auto;
     justify-content: space-evenly;
     font-family: 'Roboto', sans-serif;
@@ -221,6 +222,21 @@ i{
     transition: all 0.2s;
     object-fit: cover;
 }
+.first-note,.second-note{
+    display: block;
+    width: 20rem;
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+}
+.first-note{
+    display: none;
+}
+.second-note{
+    margin-left: 15rem;
+    color: #929292;
+}
 .menu-items{
     margin: 0.4rem 0;
     display: grid;
@@ -240,6 +256,7 @@ i{
     margin-left: calc(20px + 1rem);
     font-size: 1.4rem;
     font-weight: 600;
+    color: #07a8c3;
 }
 
 .item-deital{
@@ -262,7 +279,7 @@ i{
     }
 }
 #contact{
-    margin: 15vh 0 0 0;
+    margin: 0;
 }
 h2{
     text-align: center;
@@ -276,23 +293,23 @@ h2{
     margin: 20px 0;
 }
 .collumn{
-    height: 30vh;
-    width: 15vw;
+    height: 10rem;
+    width: 10rem;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0 1.5rem;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    
     font-size: 1.6rem;
     font-family: 'Bodoni Moda', serif;
     transition: all 0.5s;
     cursor: pointer;
 }
 .collumn:hover{
-    box-shadow: 0 0 15px rgba(0,0,0,0.2), 0 0 5px rgba(0,0,0,0.5);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2), 0 0 5px rgba(0,0,0,0.4);
 }
 .reservation{
     color: rgb(151, 68, 0);
@@ -311,193 +328,4 @@ h2{
 .symbol-container>img{
     display: inline-block;
     border-radius: 50%;
-}
-.contact-grid{
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    justify-content: center;
-    grid-gap: 1rem;
-    height: auto;
-    width: 70vw;
-    overflow: hidden;
-    
-    margin: 0 auto;
-}
-form{
-    grid-column-start: 1;
-    grid-column-end:1 ;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    background-color: #fff;
-    height: 40vh;
-    width: 22vw;
-    color:rgb(71, 71, 71);
-    padding: 2rem 3rem;
-    padding-bottom: 25px;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    overflow: hidden;
-    
-}
-
-
-.txt-field, .time{
-    position: relative;
-    margin: 1.4rem 0;
-    border-bottom: 1px solid rgb(139, 135, 135);
-    margin-bottom: 20px;
-}
-.time{
-    border: none;
-    
-}
-.time input{
-    color:rgb(71, 71, 71);
-    font-size: 1rem;
-    
-    border: 1px solid  rgb(139, 135, 135);
-    padding: 0.2rem;
-    background-color:  #fff;
-}
-.txt-field span{
-    content: "";
-    position: absolute;
-    height: 1px;
-    width: 0;
-    top: 100%;
-    left: 0;
-    background-color:  rgb(4, 151, 209);
-    transition: all 0.2s;
-}
-.txt-field input{
-    height: 40px;
-    width: 100%;
-    background: none;
-    border: none;
-    font-size: 18px;
-    background: none;
-    outline: none;
-    padding:  0 6px;
-    outline: none;
-    color: #fff;
-}
-.txt-field input:focus ~ label{
-    transform: translate(0, -180%);
-    font-size: 12px;
-    color: rgb(4, 151, 209);
-}
-.txt-field input:valid ~ label{
-    transform: translate(0, -180%);
-    font-size: 12px;
-    color: rgb(4, 151, 209);
-}
-.txt-field input:focus ~ span{
-    width: 100%;
-}
-.txt-field label{
-    position: absolute;
-    top: 50%;
-    left: 6px;
-    transform: translate(0,-50%);
-    pointer-events: none;
-    color:rgb(139, 135, 135);
-    transition: all 0.5s;
-}
-.password{
-    margin-bottom: 10px
-}
- 
-input[type="submit"]{
-    width: 100%;
-    text-align: center;
-    padding: 14px 0;
-    font-size: 15px;
-    font-weight: 600;
-    color: white;
-    background-color:rgb(78, 207, 3);
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-}
-#contact a{
-    display: block;
-    height: 50px;
-    width: 150px;
-    margin: 0 auto;
-   
-}
-.delivery-content{
-    background-color:rgb(151, 68, 0);
-    width: 22vw;
-    
-    padding: 1rem 3rem;
-    padding-bottom: 25px;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    overflow: hidden;
-    margin-right: 1rem;
-    justify-content: center;
-    align-items: center;
-}
-
-.delivery-content img{
-    display: block;
-    height: 50%;
-    width: 50%;
-    margin: 1.5rem auto;
-}
-.phone-number-content{
-    grid-row: 2/3;
-    grid-column: 2/3;
-    
-    background-color:#e7ac37;
-    width: 22vw;
-    font-size: 1.2rem;
-    padding: 1rem 3rem;
-    padding-bottom: 25px;
-    display: flex;
-    flex-direction: column;
-    height: 20vh;
-    overflow: hidden;
-    margin-right: 2rem;
-    justify-content: center;
-    align-items: center;
-   transition: all 0.5s;
-}
-.phone-number-text{
-    border-top: 2px red solid;
-    border-bottom: 2px red solid;
-    width: 110%;
-    text-align: center;
-    z-index: 5;
-    transform: rotate(-45deg) translate(-12.5%,12.5%);
-}
-.phone-number-text>div{
-    margin: 0 auto;
-    
-    z-index: 10;
-    
-    width: 10rem;
-    padding: 0;
-}
-.form-active{
-    animation-name: form-active;
-    animation-duration: 0.8s;
-    animation-fill-mode:forwards;
-}
-@keyframes form-active{
-    
-    100%{
-        margin-left: 32vw;
-        
-    }
-}
-.grid-not-active{
-    animation-name: grid-not-active;
-    animation-duration: 0.8s;
-    animation-fill-mode:forwards;
-    animation-delay: 0.8s;
 }
