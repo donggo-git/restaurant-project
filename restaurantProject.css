@@ -73,13 +73,31 @@ nav a{
     align-items: center;
     width: 100%;
 }
+.first-line{
+    background-color: #A4DA5F;
+    color: #333333;
+}
+.second-line{
+    background-color: #333333;
+    color:  #A4DA5F;
+}
 .about-us-line img{
     width: 50%;
-    height: 30rem;
+    height: 50vh;
 }
-.about-us-line div{
+.about-us-line ul{
     width: 50%;
-    height: 30rem;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    font-weight: lighter;
+}
+.about-us-line li{
+    font-size: 1.2rem;
+    margin: 0.2rem auto;
+    width: 50%;
 }
 #menus{
     min-height: auto;
@@ -114,8 +132,9 @@ section h3{
     height: 10vw;
     cursor: pointer;
     height: 15vw;
+    overflow: hidden;
 }
-.slide-item div{
+.slide-item>div{
     height: 100%;
     width: auto;
     overflow: hidden;
@@ -135,6 +154,10 @@ section h3{
     font-size: 1.6rem;
     color:  #ffffff;
     text-align: center;
+}
+.special-note{
+    color: red;
+    width: 100%;
 }
 .slide-item:hover.slide-item img{
     transform: scale(1.4);
@@ -218,7 +241,7 @@ i{
     margin-left: calc(20px + 1rem);
     font-size: 1.6rem;
     font-weight: 600;
-    color: #07a8c3;
+    color: #A4DA5F;
 }
 
 .item-deital{
