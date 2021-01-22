@@ -42,8 +42,10 @@ $(document).ready(function () {
             $(this).parent().addClass('is-not-active')
         }
     })
-    $('.reservation').click(function () {
-        $('.reservation-content').addClass('form-active')
-        $('.')
+    $('.slide-item').click(function () {
+
+        $(this).children('.slide-item-name').css('top', '-50%');
+        $(this).children('.special-note').css('top', '50%');
     })
+
 })

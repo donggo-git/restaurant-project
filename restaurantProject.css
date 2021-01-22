@@ -134,7 +134,7 @@ section h3{
     height: 15vw;
     overflow: hidden;
 }
-.slide-item>div{
+.slide-item-image{
     height: 100%;
     width: auto;
     overflow: hidden;
@@ -145,7 +145,7 @@ section h3{
     transition: all 0.4s;
     overflow: hidden;
 }
-.slide-item>p{
+.slide-item-name{
     position: absolute;
     z-index: 5;
     top: 50%;
@@ -154,10 +154,18 @@ section h3{
     font-size: 1.6rem;
     color:  #ffffff;
     text-align: center;
+    transition: all 0.4s;
 }
 .special-note{
-    color: red;
-    width: 100%;
+    z-index: 10;
+    top: 150%;
+    left: 50%;
+    color: #ffffff;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-size: 1.2rem;
+    width: 90%;
+    transition: all 0.4s;
 }
 .slide-item:hover.slide-item img{
     transform: scale(1.4);
