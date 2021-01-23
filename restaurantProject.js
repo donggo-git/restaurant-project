@@ -43,16 +43,18 @@ $(document).ready(function () {
         }
     })
     $('.slide-item').click(function () {
-        let thisClass = this.className.split(' ')[this.className.split(' ').length - 1]
-        if (!specialNote_Not_Active) {
-            $('.' + thisClass).children('.slide-item-name').css('top', '-50%');
-            $('.' + thisClass).children('.special-note').css('top', '50%');
-            specialNote_Not_Active = !specialNote_Not_Active
+
+        //final class of slide-item
+        let thisId = $(this).attr('name')
+        if ($('.' + thisId).hasClass('slide-not-active')) {
+            $('.' + thisId).children('.slide-item-name').css('top', '-50%');
+            $('.' + thisId).children('.special-note').css('top', '50%');
+            $('.' + thisId).removeClass('slide-not-active')
         }
         else {
-            $('.' + thisClass).children('.slide-item-name').css('top', '50%');
-            $('.' + thisClass).children('.special-note').css('top', '150%');
-            specialNote_Not_Active = !specialNote_Not_Active
+            $('.' + thisId).children('.slide-item-name').css('top', '50%');
+            $('.' + thisId).children('.special-note').css('top', '150%');
+            $('.' + thisId).addClass('slide-not-active')
         }
     })
 
