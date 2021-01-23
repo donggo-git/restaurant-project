@@ -1,7 +1,7 @@
 $(document).ready(function () {
     let move = 0;
     const y = -30;
-    let detail_isActive = false;
+    let specialNote_Not_Active = false
     $(".next").click(function () {
 
         move += 1;
@@ -43,9 +43,17 @@ $(document).ready(function () {
         }
     })
     $('.slide-item').click(function () {
-
-        $(this).children('.slide-item-name').css('top', '-50%');
-        $(this).children('.special-note').css('top', '50%');
+        let thisClass = this.className.split(' ')[this.className.split(' ').length - 1]
+        if (!specialNote_Not_Active) {
+            $('.' + thisClass).children('.slide-item-name').css('top', '-50%');
+            $('.' + thisClass).children('.special-note').css('top', '50%');
+            specialNote_Not_Active = !specialNote_Not_Active
+        }
+        else {
+            $('.' + thisClass).children('.slide-item-name').css('top', '50%');
+            $('.' + thisClass).children('.special-note').css('top', '150%');
+            specialNote_Not_Active = !specialNote_Not_Active
+        }
     })
 
 })
