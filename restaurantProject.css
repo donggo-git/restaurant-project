@@ -18,6 +18,9 @@ header{
 ul{
     list-style:none;
 }
+a{
+    text-decoration: none;
+}
 nav{
     position: fixed;
     width: 100vw;
@@ -272,53 +275,24 @@ i{
     }
 }
 #contact{
+    padding: 2rem 0;
     margin: 0;
+    width: 100%;
+    background-color: #333333;
+    color: #A4DA5F;
 }
 h2{
     text-align: center;
     margin-bottom: 1rem;
     font-family: 'Poppins', sans-serif;
 }
-.contact{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin: 20px 0;
+.address{
+    margin: 1rem 2rem ;
 }
-.collumn{
-    height: 10rem;
-    width: 10rem;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 1.5rem;
-    border-radius: 10px;
-    
-    font-size: 1.6rem;
-    font-family: 'Bodoni Moda', serif;
-    transition: all 0.5s;
-    cursor: pointer;
+.address a{
+    color:  #A4DA5F;
 }
-.collumn:hover{
-    box-shadow: 0 0 15px rgba(0,0,0,0.2), 0 0 5px rgba(0,0,0,0.4);
-}
-.reservation{
-    color: rgb(151, 68, 0);
-}
-.delivery{
-    color: rgb(32, 32, 32);
-}
-.call-us{
-    color: rgb(255, 136, 0);
-}
-.symbol-container{
-    height: 50%;
-    width: 50%;
-    margin-bottom: 1rem;
-}
-.symbol-container>img{
-    display: inline-block;
-    border-radius: 50%;
+.address p{
+    margin: 1rem 0;
+    width: 17rem;
 }
