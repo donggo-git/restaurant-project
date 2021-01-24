@@ -281,18 +281,47 @@ i{
     background-color: #333333;
     color: #A4DA5F;
 }
+.basic-contact{
+    display: flex;
+    margin: 1.5rem 0;
+    justify-content: space-around;
+}
 h2{
     text-align: center;
     margin-bottom: 1rem;
     font-family: 'Poppins', sans-serif;
 }
-.address{
-    margin: 1rem 2rem ;
-}
+
 .address a{
     color:  #A4DA5F;
 }
 .address p{
     margin: 1rem 0;
     width: 17rem;
+}
+.order p{
+    margin: 1rem 0;
+    width: 19rem;
+}
+.phone-number{
+    text-align: center;
+    margin: 1rem 0;
+}
+.order-logo{
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+.order-logo img{
+    display: block;
+width: 10rem;
+height: 5rem;
+margin-right: 1rem;
+margin-top: 1rem;
+border-radius: 5rem;
+transition: all 0.4s;
+}
+.order-logo img:hover img{
+    border-radius: 0rem;
 }
