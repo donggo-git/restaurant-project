@@ -1,10 +1,15 @@
 $(document).ready(function () {
     let move = 0;
     const y = -30;
-    let specialNote_Not_Active = false
     $(".next").click(function () {
 
         move += 1;
+        $('.slide').css('transition', 'all 0.5s')
+        $('.slide').css('transform', `translateX(${-move * 30 + y}vw)`)
+
+    });
+    $(".previous").click(function () {
+        move -= 1;
         $('.slide').css('transition', 'all 0.5s')
         $('.slide').css('transform', `translateX(${-move * 30 + y}vw)`)
 
@@ -23,12 +28,7 @@ $(document).ready(function () {
         }
     })
 
-    $(".previous").click(function () {
-        move -= 1;
-        $('.slide').css('transition', 'all 0.5s')
-        $('.slide').css('transform', `translateX(${-move * 30 + y}vw)`)
 
-    });
     $('.item-name').click(function () {
 
         if ($(this).parent().hasClass('is-not-active')) {
@@ -57,5 +57,7 @@ $(document).ready(function () {
             $('.' + thisId).addClass('slide-not-active')
         }
     })
-
+    $('.burger-nav').click(function () {
+        $('nav').addClass('nav-active')
+    })
 })
