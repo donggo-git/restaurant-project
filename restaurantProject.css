@@ -388,7 +388,7 @@ padding: 0.2rem;
         font-size: 2rem;
         clip-path: circle(10% at 90% -10%);
         -webkit-clip-path: circle(10% at 90% -10%);
-        transition: all 0.8s;
+        transition: all 1s;
     }
     .nav-active{
         clip-path: circle(190% at 90% -10%);
@@ -419,6 +419,6 @@ padding: 0.2rem;
     }
     .about-us-line ul{
         height: 20vh;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 }
