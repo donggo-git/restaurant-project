@@ -57,7 +57,18 @@ $(document).ready(function () {
             $('.' + thisId).addClass('slide-not-active')
         }
     })
+    //on off burger nav
     $('.burger-nav').click(function () {
-        $('nav').addClass('nav-active')
+        if ($('nav').hasClass('nav-active')) {
+            $('nav').removeClass('nav-active')
+        }
+        else {
+            $('nav').addClass('nav-active')
+        }
+    }
+    )
+    //off burger nav when click on link
+    $('nav>ul>li>a').click(function () {
+        $('nav').removeClass('nav-active')
     })
 })

@@ -126,11 +126,11 @@ i{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+    font-size: 1.2rem;
     font-weight: lighter;
 }
 .about-us-line li{
-    font-size: 1.2rem;
+    
     margin: 0.2rem auto;
     width: 50%;
 }
@@ -388,7 +388,7 @@ padding: 0.2rem;
         font-size: 2rem;
         clip-path: circle(10% at 90% -10%);
         -webkit-clip-path: circle(10% at 90% -10%);
-        transition: all 1s;
+        transition: all 0.8s;
     }
     .nav-active{
         clip-path: circle(190% at 90% -10%);
@@ -404,10 +404,21 @@ padding: 0.2rem;
     nav>ul>li{
         margin: 2rem;
     }
+    nav a:hover{
+        transform: scale(1.3);
+        font-weight: bolder;
+    }
     #about-us-link{
         border: none
     }
     .burger-nav{
         display: flex;
+    }
+    .about-us-line img{
+        height: 20vh;
+    }
+    .about-us-line ul{
+        height: 20vh;
+        font-size: 1.6rem;
     }
 }
